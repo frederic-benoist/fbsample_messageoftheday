@@ -50,6 +50,13 @@ class AdminSFMessageOfTheDayController extends FrameworkBundleAdminController
         );
     }
 
+
+    public function ajaxAction(Request $request)
+    {
+        die('AdminSFMessageOfTheDayController:ajax');
+    }
+
+
     /**
      * Install AdminDayMessage in customer back office menu
      * @return boolean true if success

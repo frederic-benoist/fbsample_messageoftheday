@@ -27,3 +27,12 @@ fbsample_messageoftheday:
         _controller: 'Fbenoist\FbSample_MessageOfTheDay\Controller\Admin\AdminSFMessageOfTheDayController::indexAction'
         _legacy_controller: 'AdminSFMessageOfTheDayControllerIndexClass'
         _legacy_link: 'AdminSFMessageOfTheDayControllerIndexClass'
+
+fbsample_messageoftheday_ajax:
+    path:     /fbsample_messageoftheday/ajax/index
+    methods:  [GET]
+    defaults:
+        _controller: 'Fbenoist\FbSample_MessageOfTheDay\Controller\Admin\AdminSFMessageOfTheDayController::ajaxAction'
+        _legacy_controller: 'AdminSFMessageOfTheDayControllerAjaxClass'
+        _legacy_link: 'AdminSFMessageOfTheDayControllerAjaxClass'
+

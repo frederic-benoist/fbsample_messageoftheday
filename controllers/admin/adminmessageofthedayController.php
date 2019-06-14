@@ -192,4 +192,17 @@ class AdminMessageOfTheDayController extends ModuleAdminController
         }
         return true;
     }
+
+    public function displayAjaxReset()
+    {
+        // ?ajax=1&action=reset
+        die('AdminMessageOfTheDayController:Reset');
+        return;
+    }
+
+    public function displayAjax()
+    {
+        die('In AdminMessageOfTheDayController');
+
+    }
 }
