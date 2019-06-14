@@ -23,8 +23,9 @@ use PrestaShop\PrestaShop\Adapter\ObjectPresenter;
 use PrestaShop\PrestaShop\Adapter\SymfonyContainer;
 
 use PrestaShop\PrestaShop\Core\Module\WidgetInterface;
-use Fbenoist\FbSample_MessageOfTheDay\Model\MessageOfDay;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+
+use Fbenoist\FbSample_MessageOfTheDay\Model\MessageOfDay;
 use Fbenoist\FbSample_MessageOfTheDay\Controller\Admin\AdminSFMessageOfTheDayController;
 
 class FbSample_MessageOfTheDay extends Module implements WidgetInterface
@@ -88,6 +89,7 @@ class FbSample_MessageOfTheDay extends Module implements WidgetInterface
     {
         $serializer = new ObjectPresenter;
         $messageofday = MessageOfDay::getTodayMessage();
+
         if (Validate::isLoadedObject($messageofday)) {
             return array(
                 'messageofday' => $serializer->present($messageofday),

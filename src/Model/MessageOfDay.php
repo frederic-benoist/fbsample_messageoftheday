@@ -34,6 +34,7 @@ class MessageOfDay extends ObjectModel
     public $date_upd;
     public $title;
     public $message;
+
     public static $definition = array(
         'table' => 'messageofday',
         'primary' => 'id_messageofday',
